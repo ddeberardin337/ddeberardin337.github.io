@@ -12,25 +12,32 @@
 </head>
 <body>
     <!-- Atmosphere layers -->
-<div class="crt-overlay" aria-hidden="true"></div>
+    <!-- Boot / atmosphere layers -->
+    <div class="crt-overlay" aria-hidden="true"></div>
 
-    <div class="particles" aria-hidden="true">
-        <!-- geometric particles -->
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+        <div class="particles" aria-hidden="true">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
 
-        <!-- glowing orbs -->
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-        <div class="orb orb-4"></div>
-    </div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+
+        <!-- Biomechanical fragments (hero decoration) -->
+        <div class="biomech-fragments" aria-hidden="true">
+            <div class="frag frag-1"></div>
+            <div class="frag frag-2"></div>
+            <div class="frag frag-3"></div>
+            <div class="frag frag-4"></div>
+        </div>
 
     <!-- Navigation -->
     <header class="site-header">
@@ -377,6 +384,41 @@
         <p>Designed and developed by David DeBerardinis</p>
         <p>Built with HTML, CSS, and GitHub Pages.</p>
     </footer>
+
+    <script>
+        (function () {
+            // Remove boot class after sequence
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    document.body.classList.remove('booting');
+                }, 2000);
+            });
+
+            // Gentle reactive particles
+            const particles = document.querySelectorAll('.particle, .orb');
+            let mouseX = window.innerWidth / 2;
+            let mouseY = window.innerHeight / 2;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function updateParticles() {
+                particles.forEach((p, i) => {
+                    const rect = p.getBoundingClientRect();
+                    const cx = rect.left + rect.width / 2;
+                    const cy = rect.top + rect.height / 2;
+                    const strength = 0.012 * ((i % 3) + 1);
+                    const dx = (mouseX - cx) * strength;
+                    const dy = (mouseY - cy) * strength;
+                    p.style.transform = `translate(${dx}px, ${dy}px)`;
+                });
+                requestAnimationFrame(updateParticles);
+            }
+            updateParticles();
+        })();
+    </script>
 
 </body>
 </html>
