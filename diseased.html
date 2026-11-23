@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseased — a Unity game jam project focused on gameplay programming and interconnected game systems.">
+    <title>Diseased | Software. Systems. Interactive Worlds.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar">
+        <a href="#" class="logo">
+                        <svg class="brand-mark" viewBox="0 0 180 180" aria-hidden="true">
+                            <path d="M38 20 H100 A70 70 0 0 1 100 160 H38 Z"
+                                fill="none" stroke="currentColor" stroke-width="7"/>
+                            <path d="M58 43 H99 A47 47 0 0 1 99 137 H58 Z"
+                                fill="none" stroke="currentColor" stroke-width="3" opacity=".4"/>
+                            <path d="M58 90 H122 M111 79 L122 90 L111 101"
+                                fill="none" stroke="currentColor" stroke-width="5"/>
+                        </svg>
+                        <span class="brand-name">DEBERARDINIS DESIGN</span>
+                    </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   
+    <main class="project-page">
+
+        <!-- PROJECT HERO -->
+        <section class="project-hero">
+
+            <div class="project-hero-meta">
+                <span>01 / FEATURED PROJECT</span>
+                <span>UNITY / C# / GAME JAM</span>
+            </div>
+
+            <h1 class="project-hero-title">
+                DISEASED<span class="title-period">.</span>
+            </h1>
+
+            <p class="project-hero-description">
+                A collaborative Unity game developed during a time-constrained
+                game jam. As the sole programmer, I designed and implemented
+                the game's technical architecture, building interconnected
+                gameplay systems and the tools the team needed to use them.
+            </p>
+
+            <div class="project-hero-image">
+                <img src="images/DIseased/Diseased4.png"
+                    alt="Gameplay screenshot from Diseased">
+            </div>
+
+            <div class="project-hero-footer">
+                <div>
+                    <span>ROLE</span>
+                    <strong>Sole Programmer</strong>
+                </div>
+                <div>
+                    <span>STATUS</span>
+                    <strong>Completed</strong>
+                </div>
+                <div>
+                    <span>ENGINE</span>
+                    <strong>Unity</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT OVERVIEW -->
+        <section class="project-section">
+
+            <div class="project-section-heading">
+                <span>01 / OVERVIEW</span>
+                <h2>Building the foundation.</h2>
+            </div>
+
+            <div class="project-overview-grid">
+
+                <div>
+                    <p>
+                        Diseased was developed by a small team working together
+                        during a game jam. While the team handled the visual
+                        direction and artwork, I was responsible for the
+                        programming, system architecture, and technical
+                        implementation.
+                    </p>
+
+                    <p>
+                        Rather than building each feature in isolation, I
+                        structured the project around components that could
+                        communicate and work together. Player interaction,
+                        inventory, crafting, disease mechanics, NPC dialogue,
+                        and quest progression all depended on one another to
+                        support the core gameplay loop.
+                    </p>
+
+                    <p>
+                        I also took responsibility for making those systems
+                        usable by the rest of the team, creating configured
+                        prefabs and instructional walkthroughs so visual
+                        content could be integrated without requiring
+                        teammates to work directly with the underlying code.
+                    </p>
+                </div>
+
+                <div class="project-facts">
+                    <div>
+                        <span>RESPONSIBILITY</span>
+                        <strong>Architecture & Implementation</strong>
+                    </div>
+                    <div>
+                        <span>DEVELOPMENT</span>
+                        <strong>Collaborative Game Jam</strong>
+                    </div>
+                    <div>
+                        <span>TECHNOLOGY</span>
+                        <strong>Unity / C# / ScriptableObjects</strong>
+                    </div>
+                    <div>
+                        <span>FOCUS</span>
+                        <strong>Interconnected Gameplay Systems</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="project-gallery">
+
+            <div class="gallery-heading">
+                <span>PROJECT GALLERY / 01</span>
+                <p>Gameplay & systems</p>
+            </div>
+
+            <div class="gallery-track">
+
+                <figure class="gallery-slide">
+                    <img src="images/DIseased/Diseased1.png"
+                        alt="Diseased gameplay">
+                    <figcaption>Gameplay environment</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <img src="images/DIseased/Diseased2.png"
+                        alt="Diseased inventory">
+                    <figcaption>Inventory system</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <img src="images/DIseased/Diseased3.png"
+                        alt="Diseased crafting">
+                    <figcaption>Crafting mechanics</figcaption>
+                </figure>
+
+                <figure class="gallery-slide">
+                    <img src="images/DIseased/Diseased4.png"
+                        alt="Diseased NPC dialogue">
+                    <figcaption>NPC interaction</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="gallery-instruction">
+                SCROLL TO EXPLORE <span>→</span>
+            </div>
+
+        </section>
+
+
+
+        <!-- ARCHITECTURE -->
+        <section class="project-section">
+
+            <div class="project-section-heading">
+                <span>02 / ARCHITECTURE</span>
+                <h2>Systems that work together.</h2>
+            </div>
+
+            <p>
+                I designed the project's code structure and determined how
+                individual components would communicate. A major consideration
+                was keeping responsibilities distributed across components
+                while allowing different gameplay features to interact.
+            </p>
+
+            <div class="system-grid">
+
+                <article class="system-item">
+                    <span>01</span>
+                    <h3>Interface-driven interaction</h3>
+                    <p>
+                        Implemented a shared IUsable interface that allowed
+                        different world objects to expose interaction behavior
+                        through a common contract. The player interaction
+                        controller could identify nearby usable objects,
+                        display their prompts, and invoke their interactions
+                        without needing separate interaction logic for every
+                        object type.
+                    </p>
+                    <small>IUsable / PlayerInteraction</small>
+                </article>
+
+                <article class="system-item">
+                    <span>02</span>
+                    <h3>Data-driven inventory</h3>
+                    <p>
+                        Used ScriptableObjects to define item properties,
+                        categories, stack limits, and effects. Inventory state
+                        and item definitions were handled separately, allowing
+                        different items to share the same underlying inventory
+                        functionality without requiring a dedicated script
+                        for every item.
+                    </p>
+                    <small>ItemData / Inventory</small>
+                </article>
+
+                <article class="system-item">
+                    <span>03</span>
+                    <h3>Health & disease mechanics</h3>
+                    <p>
+                        Separated player health management from disease
+                        behavior. The disease component handled periodic
+                        damage and suppression, while the health component
+                        remained responsible for health state, damage, and
+                        healing. Other systems could interact with these
+                        components through their public methods.
+                    </p>
+                    <small>PlayerHealth / PlayerDisease</small>
+                </article>
+
+                <article class="system-item">
+                    <span>04</span>
+                    <h3>Recipe-driven crafting</h3>
+                    <p>
+                        Built crafting around reusable recipe assets defining
+                        two ingredients and a resulting item. The crafting
+                        workflow validated inventory contents, consumed the
+                        required ingredients, added the result, and refreshed
+                        the inventory interface.
+                    </p>
+                    <small>CraftingRecipe / CraftingSystem</small>
+                </article>
+
+                <article class="system-item">
+                    <span>05</span>
+                    <h3>Quest progression</h3>
+                    <p>
+                        Coordinated NPC dialogue, inventory delivery, and
+                        quest progression through separate components.
+                        QuestManager tracked the current required item and
+                        controlled progression, while pickups checked whether
+                        they were currently available.
+                    </p>
+                    <small>QuestManager / NPCInteraction</small>
+                </article>
+
+                <article class="system-item">
+                    <span>06</span>
+                    <h3>Persistent world state</h3>
+                    <p>
+                        Implemented persistent managers and tracked collected
+                        pickups across scene transitions. Unique pickup IDs
+                        and a HashSet allowed the world to recognize previously
+                        collected objects and prevent them from reappearing.
+                    </p>
+                    <small>WorldStateManager / PersistentPlayer</small>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDITOR TOOLING -->
+        <section class="project-section">
+
+            <div class="project-section-heading">
+                <span>03 / DEVELOPMENT TOOLING</span>
+                <h2>Building beyond the runtime.</h2>
+            </div>
+
+            <div class="project-overview-grid">
+
+                <div>
+                    <p>
+                        Gameplay systems needed to be accessible not only to
+                        players, but also to the people creating the game
+                        world. I built and configured the project's prefabs
+                        so teammates could place objects through a
+                        straightforward drag-and-drop workflow.
+                    </p>
+
+                    <p>
+                        I also developed custom Unity Inspector tooling to
+                        simplify scene configuration. For example, the
+                        DoorInteraction editor allowed destination scenes
+                        to be selected and available spawn points to be
+                        discovered and configured through the Inspector.
+                    </p>
+
+                    <p>
+                        These tools reduced the amount of manual setup
+                        required and helped keep content creation separate
+                        from the underlying implementation.
+                    </p>
+                </div>
+
+                <div class="project-facts">
+                    <div>
+                        <span>PREFAB WORKFLOW</span>
+                        <strong>Configured Drag-and-Drop Objects</strong>
+                    </div>
+                    <div>
+                        <span>EDITOR EXTENSIONS</span>
+                        <strong>Custom Unity Inspectors</strong>
+                    </div>
+                    <div>
+                        <span>SCENE CONFIGURATION</span>
+                        <strong>Destination & Spawn Point Selection</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEAM COMMUNICATION -->
+        <section class="project-section">
+
+            <div class="project-section-heading">
+                <span>04 / TEAM WORKFLOW</span>
+                <h2>Making technical systems accessible.</h2>
+            </div>
+
+            <p>
+                A working system is only useful to a team if the people
+                building around it understand how to use it. Alongside
+                implementation, I created private YouTube walkthroughs
+                covering system functionality, implementation details,
+                and proper configuration.
+            </p>
+
+            <p>
+                These walkthroughs gave teammates a reference for how
+                gameplay features behaved and how their content should
+                interact with the systems. Combined with preconfigured
+                prefabs, this allowed the art team to contribute to the
+                game world without needing to modify or understand the
+                underlying scripts.
+            </p>
+
+        </section>
+
+
+        <!-- ENGINEERING REFLECTION -->
+        <section class="project-section">
+
+            <div class="project-section-heading">
+                <span>05 / ENGINEERING REFLECTION</span>
+                <h2>Problem-solving under pressure.</h2>
+            </div>
+
+            <div class="project-reflection-content">
+
+                <p>
+                    Working as the sole programmer meant taking responsibility
+                    for more than individual features. I had to determine
+                    how systems should be structured, identify their
+                    dependencies, and resolve problems that emerged when
+                    separate components began interacting.
+                </p>
+
+                <p>
+                    Much of the development involved learning unfamiliar
+                    implementation details, testing assumptions, and refining
+                    the architecture as the project grew. A feature could
+                    function independently and still introduce problems
+                    when connected to inventory, UI, scene management,
+                    or another gameplay system.
+                </p>
+
+                <p>
+                    The experience reinforced the importance of clear
+                    component responsibilities, predictable interfaces,
+                    and designing tools around the people who will use them.
+                    It also gave me practical experience balancing technical
+                    implementation with collaboration and a fixed deadline.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT LINKS -->
+        <section class="project-end">
+
+            <div>
+                <span>PROJECT 01 / DISEASED</span>
+                <h2>Explore the project.</h2>
+            </div>
+
+            <div class="project-links">
+                <a href="https://play.unity.com/en/games/17efc226-d9a9-4859-8cf5-b89621d71ea8/diseased"
+                target="_blank" rel="noopener noreferrer">
+                    Play the game ↗
+                </a>
+
+                <a href="https://github.com/ddeberardin337/Diseased"
+                target="_blank" rel="noopener noreferrer">
+                    View source code ↗
+                </a>
+
+                <a href="index.html#projects">
+                    Back to projects
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+        <p>SOFTWARE. SYSTEMS. INTERACTIVE WORLDS.</p>
+    </footer>
+
+</body>
+</html>
