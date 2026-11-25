@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Flatline — David DeBerardinis</title>
+    <meta name="description" content="Dr. Flatline — an in-development 3D horror game built in Unity with C#.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Atmosphere -->
+    <div class="crt-overlay" aria-hidden="true"></div>
+
+    <div class="particles" aria-hidden="true">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <svg class="brand-mark" viewBox="0 0 180 180" aria-hidden="true">
+                    <path d="M38 20 H100 A70 70 0 0 1 100 160 H38 Z"
+                          fill="none" stroke="currentColor" stroke-width="7"/>
+                    <path d="M58 43 H99 A47 47 0 0 1 99 137 H58 Z"
+                          fill="none" stroke="currentColor" stroke-width="3" opacity=".4"/>
+                    <path d="M58 90 H122 M111 79 L122 90 L111 101"
+                          fill="none" stroke="currentColor" stroke-width="5"/>
+                </svg>
+                <span class="brand-name">DEBERARDINIS DESIGN</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="project-page">
+
+            <!-- Project Hero -->
+            <header class="project-hero">
+                <div class="project-hero-meta">
+                    <span>03 / IN DEVELOPMENT</span>
+                    <span>UNITY · C# · 3D HORROR</span>
+                </div>
+
+                <h1 class="project-hero-title">
+                    Dr. Flatline<span class="title-period">.</span>
+                </h1>
+
+                <p class="project-hero-description">
+                    An independently developed first-person 3D horror game focused on 
+                    environmental interaction, spatial tension, and systemic gameplay. 
+                    Currently in active development.
+                </p>
+
+                <!-- Replace with your actual screenshot -->
+                <div class="project-hero-image">
+                    <img src="images/Flatline/flatline1.png" 
+                         alt="Dr. Flatline gameplay environment">
+                </div>
+
+                <div class="project-hero-footer">
+                    <div>
+                        <span class="meta-label">Status</span>
+                        <strong>In Development</strong>
+                    </div>
+                    <div>
+                        <span class="meta-label">Engine</span>
+                        <strong>Unity</strong>
+                    </div>
+                    <div>
+                        <span class="meta-label">Language</span>
+                        <strong>C#</strong>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Overview -->
+            <section class="project-section">
+                <div class="project-section-heading">
+                    <span>01 / OVERVIEW</span>
+                    <h2>Building a cohesive 3D horror experience from the ground up.</h2>
+                </div>
+
+                <div class="project-overview-grid">
+                    <div>
+                        <p>
+                            Dr. Flatline is a first-person 3D horror project developed 
+                            independently in Unity. The focus is on creating a tightly 
+                            controlled atmosphere through level design, interaction systems, 
+                            and deliberate player movement rather than relying on jump scares.
+                        </p>
+                        <p>
+                            The game is being constructed modularly — each room exists as 
+                            its own prefab and is assembled into a single continuous scene. 
+                            This approach avoids traditional scene transitions and allows 
+                            for better control over lighting, streaming, and spatial continuity.
+                        </p>
+                    </div>
+
+                    <aside class="project-facts">
+                        <div>
+                            <span>Role</span>
+                            <strong>Sole Developer</strong>
+                        </div>
+                        <div>
+                            <span>Focus</span>
+                            <strong>Gameplay Systems · Level Design</strong>
+                        </div>
+                        <div>
+                            <span>Current Stage</span>
+                            <strong>Core Systems & Environment</strong>
+                        </div>
+                        <div>
+                            <span>Platform</span>
+                            <strong>PC (Unity)</strong>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- Systems Implemented -->
+            <section class="project-section">
+                <div class="project-section-heading">
+                    <span>02 / SYSTEMS IN PLACE</span>
+                    <h2>What’s currently functional.</h2>
+                </div>
+
+                <div class="section-content">
+                    <h3>Player Controller</h3>
+                    <p>
+                        First-person movement and collision have been implemented and tuned. 
+                        The controller prioritizes weight and precision to support the 
+                        slower, more deliberate pacing expected in a horror environment.
+                    </p>
+
+                    <h3>Interaction System</h3>
+                    <p>
+                        A basic interaction framework is in place. The player can look at 
+                        and interact with objects in the world. This system currently 
+                        supports doors and is structured to scale as more interactable 
+                        objects are added.
+                    </p>
+
+                    <h3>Animated Doors</h3>
+                    <p>
+                        Fully working door system with animations. Doors open and close 
+                        through the interaction system and are integrated into the 
+                        modular room prefabs.
+                    </p>
+
+                    <h3>Modular Room Architecture</h3>
+                    <p>
+                        Each room is built as an independent prefab and introduced into 
+                        a single persistent scene. This keeps the experience continuous 
+                        and simplifies lighting, audio, and spatial relationships 
+                        between spaces.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Development Approach -->
+            <section class="project-section">
+                <div class="project-section-heading">
+                    <span>03 / APPROACH</span>
+                    <h2>How the project is being built.</h2>
+                </div>
+
+                <div class="section-content">
+                    <p>
+                        Rather than jumping between multiple scenes, the game world is 
+                        assembled inside one continuous scene. Rooms are developed in 
+                        isolation as prefabs, then placed and connected. This method 
+                        makes iteration faster and keeps the sense of space intact.
+                    </p>
+                    <p>
+                        The current priority is establishing a solid foundation of 
+                        player movement, interaction, and environmental structure 
+                        before expanding narrative or enemy systems.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="project-gallery">
+                <div class="gallery-heading">
+                    <span>04 / CURRENT STATE</span>
+                    <p>Environment and systems in progress</p>
+                </div>
+
+                <div class="gallery-track">
+                    
+                    <figure class="gallery-slide">
+                        <img src="images/Flatline/flatline2.png" alt="Dr. Flatline environment screenshot">
+                        <figcaption>Early environment layout</figcaption>
+                    </figure>
+
+                    <figure class="gallery-slide">
+                        <img src="images/Flatline/flatline3.png" alt="Dr. Flatline lighting view">
+                        <figcaption>Interior space with working doors</figcaption>
+                    </figure>
+                </div>
+
+                <p class="gallery-instruction">
+                    More captures will be added as development continues.
+                </p>
+            </section>
+
+            <!-- Status / Next Steps -->
+            <section class="project-section">
+                <div class="project-section-heading">
+                    <span>05 / STATUS</span>
+                    <h2>Active development.</h2>
+                </div>
+
+                <div class="section-content">
+                    <p>
+                        Dr. Flatline is an ongoing personal project. Core movement, 
+                        collision, interaction, and door systems are functional. 
+                        The focus moving forward is expanding the environment, 
+                        refining the interaction layer, and building out additional 
+                        gameplay systems.
+                    </p>
+                    <p>
+                        Source code and a public repository will be made available 
+                        once the project reaches a more complete state.
+                    </p>
+                </div>
+            </section>
+
+            <!-- End / Back -->
+            <div class="project-end">
+                <div>
+                    <span>RETURN</span>
+                    <h2>Back to selected work</h2>
+                </div>
+                <div class="project-links">
+                    <a href="index.html#projects">← All Projects</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Designed and developed by David DeBerardinis</p>
+        <p>Built with HTML, CSS, and GitHub Pages.</p>
+    </footer>
+
+    <script>
+        (function () {
+            const particles = document.querySelectorAll('.particle, .orb');
+            let mouseX = window.innerWidth / 2;
+            let mouseY = window.innerHeight / 2;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            function updateParticles() {
+                particles.forEach((p, i) => {
+                    const rect = p.getBoundingClientRect();
+                    const cx = rect.left + rect.width / 2;
+                    const cy = rect.top + rect.height / 2;
+                    const strength = 0.012 * ((i % 3) + 1);
+                    const dx = (mouseX - cx) * strength;
+                    const dy = (mouseY - cy) * strength;
+                    p.style.transform = `translate(${dx}px, ${dy}px)`;
+                });
+                requestAnimationFrame(updateParticles);
+            }
+            updateParticles();
+        })();
+    </script>
+</body>
+</html>
